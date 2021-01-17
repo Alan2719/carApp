@@ -1,0 +1,22 @@
+.card {
+    /* background-color: #09CA19; */
+    margin: 10px;
+}
+
+/* .card-body {
+    background-color: #09CA19;
+} */
+
+.list-group-item {
+    background-color: rgb(126, 125, 122);
+    color: white;
+    font-size: 15px;
+}
+
+.active {
+    background-color: #09CA19;
+}
+
+.inactive {
+    background-color: rgb(55, 55, 243);
+}
