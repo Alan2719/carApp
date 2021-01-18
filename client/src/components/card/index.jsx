@@ -1,9 +1,13 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import "./styles.css";
 
 
 function carCard(props) {
     console.log("CARD",props.carsInfo)
+
+    const inputNameRef = useRef();
+
+    const inputDateRef = useRef();
 
     const [isActive, setActive] = useState({
         idArray: []
@@ -26,17 +30,18 @@ function carCard(props) {
         } else {
             return "card-body active"
         }
-        //console.log(isActive.idArray);
     }
     
-    // function toggleActiveStyles(index) {
-    //     if(isActive) 
-    // }
+    function saveData() {
+        //console.log(index);
+        console.log(inputNameRef.current.value);
+        console.log(inputDateRef.current.value);
+    }
 
     return (
         <>
         {props.carsInfo.length !== 0 ? (
-            props.carsInfo.map(({ _id, carid, maker, model, kilometers, estimatedate, description }) => {
+            props.carsInfo.map(({ _id, carid, maker, model, kilometers, name, estimatedate, description }) => {
                 return (
                     <div className="card">
                         <img className="card-img-top" src="..." alt="" />
@@ -48,10 +53,11 @@ function carCard(props) {
                             <li className="list-group-item"><strong>Maker:</strong> {maker}</li>
                             <li className="list-group-item"><strong>Model:</strong> {model}</li>
                             <li className="list-group-item"><strong>kilometers:</strong> {kilometers}</li>
+                            <li className="list-group-item"><strong>Employee Name:</strong> {name}</li>
                             <li className="list-group-item"><strong>Estimate date:</strong> {estimatedate}</li>
                             <li className="list-group-item"><button type="button" className="btn btn-primary" data-value={_id} onClick={() => {toggleActive(_id)}}><i class="fas fa-tools"></i></button></li>
-                            {/* <label className="switch"><input type="checkbox"><span className="slider"></span></input></label> */}
                         </ul>
+                        
                         {/* <div className="card-body">
                             
                         </div> */}

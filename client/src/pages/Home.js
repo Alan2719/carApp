@@ -8,18 +8,14 @@ function Home() {
 
     const [infoCars, setCars] = useState([]);
 
+    const [showModal, setShowModal] = useState(false);
+
     useEffect(() => {
         API.getInfo().then((dbCars) => {
             console.log(dbCars.data);
             setCars(dbCars.data)
         });
     }, []);
-
-    // function Repairing(event) {
-    //     event.preventDefault();
-    //     let carId = event.currentTarget.getAttribute("data-value");
-    //     console.log(carId);
-    // }
 
     return (
         <>

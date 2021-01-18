@@ -15,6 +15,7 @@ const carsSeed = [
     maker: "Nissan",
     model: "Versa",
     kilometers: "",
+    name:"",
     estimatedate: "2021/12/01",
     description: "change of suspension"
   },
@@ -24,6 +25,7 @@ const carsSeed = [
     maker: "Honda",
     model: "CR-V",
     kilometers:"",
+    name:"",
     estimatedate: "",
     description: "motor adjustment"
   },
@@ -33,6 +35,7 @@ const carsSeed = [
     maker: "Honda",
     model: "Civic",
     kilometers: 90000,
+    name:"",
     estimatedate: "",
     description: "engine tunning"
   },
@@ -42,6 +45,7 @@ const carsSeed = [
     maker: "Volkswagen",
     model: "Tiguan",
     kilometers: 13500,
+    name:"",
     estimatedate: "",
     description: "oil change"
   },
@@ -51,6 +55,7 @@ const carsSeed = [
     maker: "Nissan",
     model: "Sentra",
     kilometers: 6000,
+    name:"",
     estimatedate: "",
     description: "change of pads"
   },
@@ -60,6 +65,7 @@ const carsSeed = [
     maker: "Volkswagen",
     model: "Vento",
     kilometers: 80050,
+    name:"",
     estimatedate: "",
     description: "change of pads"
   },
@@ -69,6 +75,7 @@ const carsSeed = [
     maker: "Chevrolet",
     model: "Aveo NG",
     kilometers: 33460,
+    name:"",
     estimatedate: "2021/09/07",
     description: "change transmission (CVT)"
   },
@@ -78,6 +85,7 @@ const carsSeed = [
     maker: "Chevrolet",
     model: "Spark",
     kilometers: 16098,
+    name:"",
     estimatedate: "",
     description: "change lights"
   }

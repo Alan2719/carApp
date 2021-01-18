@@ -17,6 +17,9 @@ const carSchema = new Schema({
     kilometers: {
         type: String
     },
+    name: {
+        type:String
+    },
     date: { 
         type: Date, 
     },
