@@ -1,13 +1,9 @@
-import React, {useState, useRef} from "react";
+import React, {useState} from "react";
 import "./styles.css";
 
 
 function carCard(props) {
     console.log("CARD",props.carsInfo)
-
-    const inputNameRef = useRef();
-
-    const inputDateRef = useRef();
 
     const [isActive, setActive] = useState({
         idArray: []
@@ -30,12 +26,6 @@ function carCard(props) {
         } else {
             return "card-body active"
         }
-    }
-    
-    function saveData() {
-        //console.log(index);
-        console.log(inputNameRef.current.value);
-        console.log(inputDateRef.current.value);
     }
 
     return (
